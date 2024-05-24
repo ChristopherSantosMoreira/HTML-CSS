@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <style>
 
         body{
@@ -13,11 +13,21 @@
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
+            background-attachment: fixed;
+
+            /*
+            Podemos fazer um 'shorthand' que seria todas essas configurações em apenas uma linha pra ter menos código, mas apenas com os backgrounds, pois todos derivam da msm logica de serem um background, pra isso criamos o estilo "background".
+            os valores definidos aqui ficarão assim em uma shorthand:display: background color > imagem > position > repeat > [size] > attchment.
+            (Talvez o size não funcione ainda ou ja funcione, depende se o navegador vai estar aceitando ou não, então se não funcionar deverá ser utilizado fora da shorthand, igual lá em cima)
+            */
+
+            background: black url("imagens/wallpaper002.jpg") center center no-repeat fixed;
+
         }
 
         main{
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
