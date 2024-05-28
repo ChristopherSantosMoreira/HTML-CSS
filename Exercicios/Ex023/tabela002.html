@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas grandes</title>
+    <style>
+
+        body{
+            font-family:  Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        td,th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: 0;
+            background-color:  gray;
+        }
+
+        tbody > tr:nth-child(2n) /* Aqui uso a pseudo-classe :nth-child que fala basicamente que vai ser afetado X campo quando (2n) = a cada 2 elementos, o segundo sera afetado, em uma lista de 40 nomes, ele ficara com um efeito "zebrado".*/
+        /* Algumas alternativad desta linha são:
+        
+        tbody > tr:nth-child(2n-1) Aqui ele forma as modificações de forma impar.
+
+        tbody > tr:nth-child(odd) Aqui tambem de forma impar.
+
+        tbody > tr:nth-child(even) Aqui de forma PAR.
+
+        tbody > tr:nth-child(2n) Aqui tambem de forma Par.
+
+        */
+        {
+            background-color: lightgray;
+        }
+
+        td.num {
+            text-align: right;
+        }
+    </style>
+
+
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!-- 
+
+        Anatomia para tabelas GRANDES
+        TABLE
+            CAPTION = LEGENDA
+            T-HDEAD
+                    TR, TD, TH
+                    T-BODY
+                            TR, TD, TH
+                            T-FOOT
+                                    TR, TD, TH
+    -->
+
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
+        </thead> 
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.934</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.934</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.934</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.934</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.934</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.934</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.934</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.934</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.934</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.934</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.934</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.934</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.934</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.934</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.934</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.934</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.934</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.934</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.934</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.934</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.934</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.934</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.934</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.934</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.934</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.934</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de habitantes</th>
+                <td class="num"><stong>84.352.774</stong></td>
+            </tr>
+        </tfoot>
+    </table>
+    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione provident id a repudiandae nulla cum ad excepturi temporibus nesciunt officia accusamus, veniam quas, atque reprehenderit inventore sint dolore, dolor quo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci consequatur dolorum expedita nesciunt fugit vero, tenetur quisquam impedit, sit culpa recusandae similique excepturi enim quis molestias totam quo praesentium? Explicabo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nesciunt facilis rerum cupiditate deleniti, ducimus placeat sit nihil! Aut, velit deleniti repudiandae non impedit officia. Minima quod rerum molestias sit! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad voluptatibus minus consequuntur? Veritatis, enim. Veritatis quos quis dolores voluptates maiores quia tempore repudiandae, nisi saepe nobis aliquid doloribus ullam incidunt.</p>
+    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione provident id a repudiandae nulla cum ad excepturi temporibus nesciunt officia accusamus, veniam quas, atque reprehenderit inventore sint dolore, dolor quo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci consequatur dolorum expedita nesciunt fugit vero, tenetur quisquam impedit, sit culpa recusandae similique excepturi enim quis molestias totam quo praesentium? Explicabo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nesciunt facilis rerum cupiditate deleniti, ducimus placeat sit nihil! Aut, velit deleniti repudiandae non impedit officia. Minima quod rerum molestias sit! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad voluptatibus minus consequuntur? Veritatis, enim. Veritatis quos quis dolores voluptates maiores quia tempore repudiandae, nisi saepe nobis aliquid doloribus ullam incidunt.</p>
+    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione provident id a repudiandae nulla cum ad excepturi temporibus nesciunt officia accusamus, veniam quas, atque reprehenderit inventore sint dolore, dolor quo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci consequatur dolorum expedita nesciunt fugit vero, tenetur quisquam impedit, sit culpa recusandae similique excepturi enim quis molestias totam quo praesentium? Explicabo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nesciunt facilis rerum cupiditate deleniti, ducimus placeat sit nihil! Aut, velit deleniti repudiandae non impedit officia. Minima quod rerum molestias sit! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad voluptatibus minus consequuntur? Veritatis, enim. Veritatis quos quis dolores voluptates maiores quia tempore repudiandae, nisi saepe nobis aliquid doloribus ullam incidunt.</p>
+    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione provident id a repudiandae nulla cum ad excepturi temporibus nesciunt officia accusamus, veniam quas, atque reprehenderit inventore sint dolore, dolor quo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci consequatur dolorum expedita nesciunt fugit vero, tenetur quisquam impedit, sit culpa recusandae similique excepturi enim quis molestias totam quo praesentium? Explicabo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nesciunt facilis rerum cupiditate deleniti, ducimus placeat sit nihil! Aut, velit deleniti repudiandae non impedit officia. Minima quod rerum molestias sit! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad voluptatibus minus consequuntur? Veritatis, enim. Veritatis quos quis dolores voluptates maiores quia tempore repudiandae, nisi saepe nobis aliquid doloribus ullam incidunt.</p>
+    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione provident id a repudiandae nulla cum ad excepturi temporibus nesciunt officia accusamus, veniam quas, atque reprehenderit inventore sint dolore, dolor quo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci consequatur dolorum expedita nesciunt fugit vero, tenetur quisquam impedit, sit culpa recusandae similique excepturi enim quis molestias totam quo praesentium? Explicabo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nesciunt facilis rerum cupiditate deleniti, ducimus placeat sit nihil! Aut, velit deleniti repudiandae non impedit officia. Minima quod rerum molestias sit! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad voluptatibus minus consequuntur? Veritatis, enim. Veritatis quos quis dolores voluptates maiores quia tempore repudiandae, nisi saepe nobis aliquid doloribus ullam incidunt.</p>
+    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione provident id a repudiandae nulla cum ad excepturi temporibus nesciunt officia accusamus, veniam quas, atque reprehenderit inventore sint dolore, dolor quo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci consequatur dolorum expedita nesciunt fugit vero, tenetur quisquam impedit, sit culpa recusandae similique excepturi enim quis molestias totam quo praesentium? Explicabo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nesciunt facilis rerum cupiditate deleniti, ducimus placeat sit nihil! Aut, velit deleniti repudiandae non impedit officia. Minima quod rerum molestias sit! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad voluptatibus minus consequuntur? Veritatis, enim. Veritatis quos quis dolores voluptates maiores quia tempore repudiandae, nisi saepe nobis aliquid doloribus ullam incidunt.</p>
+    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione provident id a repudiandae nulla cum ad excepturi temporibus nesciunt officia accusamus, veniam quas, atque reprehenderit inventore sint dolore, dolor quo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci consequatur dolorum expedita nesciunt fugit vero, tenetur quisquam impedit, sit culpa recusandae similique excepturi enim quis molestias totam quo praesentium? Explicabo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nesciunt facilis rerum cupiditate deleniti, ducimus placeat sit nihil! Aut, velit deleniti repudiandae non impedit officia. Minima quod rerum molestias sit! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad voluptatibus minus consequuntur? Veritatis, enim. Veritatis quos quis dolores voluptates maiores quia tempore repudiandae, nisi saepe nobis aliquid doloribus ullam incidunt.</p>
+    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione provident id a repudiandae nulla cum ad excepturi temporibus nesciunt officia accusamus, veniam quas, atque reprehenderit inventore sint dolore, dolor quo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci consequatur dolorum expedita nesciunt fugit vero, tenetur quisquam impedit, sit culpa recusandae similique excepturi enim quis molestias totam quo praesentium? Explicabo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nesciunt facilis rerum cupiditate deleniti, ducimus placeat sit nihil! Aut, velit deleniti repudiandae non impedit officia. Minima quod rerum molestias sit! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad voluptatibus minus consequuntur? Veritatis, enim. Veritatis quos quis dolores voluptates maiores quia tempore repudiandae, nisi saepe nobis aliquid doloribus ullam incidunt.</p>
+</body>
+</html>
