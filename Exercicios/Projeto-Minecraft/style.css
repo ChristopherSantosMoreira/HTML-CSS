@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+:root{
+
+    --cor1: #489b2e;
+    --cor2: #9700a5;
+    --cor3: #fcf5f1;
+    --cor4: #262423;
+    --fontemine: "VT323", monospace;
+    --fontepadrao: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+body{
+
+    background-color: black;
+
+}
+
+header {
+    background-color: var(--cor4);
+    color: #fcf5f1;
+    font-family: var(--fontemine);
+    font-size: 2em;
+    text-align: center;
+    padding: 2vh;
+
+}
+
+header > p {
+
+    font-size: 1em;
+
+}
+
+nav.menu {
+
+    background-color: var(--cor4);
+    color: var(--cor3);
+    display: flex;
+    justify-content: center;
+
+}
+
+nav > a {
+
+    text-decoration: none;
+    font-size: 1.5em;
+    padding: 5px;
+    margin: 16px;
+    color: var(--cor3);
+    font-family: var(--fontemine);
+
+}
+
+nav > a:hover{
+
+    color: var(--cor1);
+    text-decoration: none;
+
+}
+
+#storymode:hover{
+
+    text-decoration: none;
+    color: var(--cor2);
+
+}
+
+section.nascimentoimg{
+
+    background-image: url("imagens/notch-deitado.jpg");
+    background-repeat: no-repeat;
+
+}
+
+#nascimentoh1{
+
+    color: var(--cor3);
+    font-family: var(--fontemine);
+    font-size: 2.5em;
+    text-align: center;
+
+}
+
+#nascimento {
+
+    color: var(--cor3);
+    font-family: var(--fontemine);
+    font-size: 1.5em;
+    display: inline-block;
+    background-color: var(--cor4);
+    border-radius: 5px;
+    padding: 10px;
+
+}
+
+
