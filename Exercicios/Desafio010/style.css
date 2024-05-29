@@ -74,7 +74,7 @@ nav > a { /* Aqui diz que o os links "a" que estão contidos/são filhos ">" da 
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
-    transition-duration: .5s; /* Isso cria uma transição, coloca o numero e "s" tipo "1s" para 1 segundo e ".numero" para meio segundo, tipo "0.5s ou .5s" */
+    transition-duration: 1.5s; /* Isso cria uma transição, coloca o numero e "s" tipo "1s" para 1 segundo e ".numero" para meio segundo, tipo "0.5s ou .5s" */
 }
 
 nav > a:hover { /* Aqui estou declarando que os links contidos/filhos dentro de nav " nav > a " irão receber uma ação quando o mouse passar em cima deles, isso é declarado pela tag ":hover".*/
