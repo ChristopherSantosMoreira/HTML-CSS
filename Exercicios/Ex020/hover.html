@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de hover</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    
+        div > p { /* Isso significa " paragrafo que esta dentro/ o paragrafo que é filho desta div" */
+            display: none; /*Aqui estamos falando que o conteudo dentro da tag <p> sera escondido*/
+        }
+
+        div:hover > p{ /* Isso significa "O conteudo dentro da tag <p> que está dentro da tag <div> ira ser afetado.*/
+            display: block; /* Aqui estamos dizendo que o paragrafo será mostrado "quando o mouse passar na div " que é dito em " div:hover " . Isso é a base para menus de botoes, bem base*/
+            color: white;
+            background-color: red;
+            width: 300px;
+        }
+
+        div:hover{
+            color: red;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>
+        Passe o mouse aqui
+        <p>Texto escondido</p>
+    </div>
+    <p>Fim do Exemplo</p>
+</body>
+</html>

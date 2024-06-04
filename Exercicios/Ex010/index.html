@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <H1>Usando links externos</H1>
+    <p>Você pode acessar meu <a href="https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf">repositorio publico no github</a></p> <!--Aqui nós criamos a tag <a> para criar um link, esta tag se chama "Ancora" caso alguem clique, nosso site ira ser fechado e ela será redirecionada para o link que está dentro de href=" " que nesse caso é um github-->
+
+    <p>Você tambem pode acessar <a href="https://youtube.com/cursoemvideo" target="_bank" rel="external">meu canal</a> gratuito no youtube</p> <!--Nesta area utilizamos target="_blank" para criar uma aba em branco, em seguida utilizamos rel="external" para explicar que o link será aberto na aba em branco que foi criada, assim quando clicar  no link nosso site não sera fechado.-->
+    <h2>Esta é a primeira pagina do meu site</h2>
+    <p>Caso queira visualizar a segunda página, clique <a href="pag002.html" target="_self" rel="next">aqui</a></p> <!--Aqui usamos a target="_self" para explicar que a pagina que vai abrir é uma pagina que pertence ao nosso site, e não de terceiros-->
+    <p>Esta pagina é um oferecimento de <a href="https://hostnet.com.br" target="_blank" rel="nofollow">HostNet</a></p>
+    <p>Você tambem pode acessar a terceira pagina clicando <a href="noticias/pag003.html" target="_self" rel="next">aqui</a></p> <!--Aqui utilizamos ctrl+espaço dentro das aspas de href=" " para selecionarmos a PASTA noticias e o conteudo html dentro dela-->
+    <h1>Links para Download</h1>
+    <ul>
+        <li><a href="Livro/10 - Ligações em toda parte (1).pdf" download="Livro/10 - Ligações em toda parte (1).pdf" type="application/pdf">Download do livro em PDF</a></li><!--Aqui colocamos o link como se fosse para a outra pagina, mas no lugar de uma pagina no href=" " colocamos o arquivo que está em uma pasta a parte, e em seguida utilizamos a tag download=" " e colocamos o nome do arquivo dentro dela, em seguida para confirmar o tipo de download utilizamos type="application/pdf" pois se trata de um arquivo PDF, porem o PDF em si não sera baixado ao clicar no link, apenas sera exibido, ja o arquivo .zip será baixado, seguindo a mesma logica deste.-->
+        <li><a href="Livro/10 - Ligações em toda parte (1).zip" download="Livro/10 - Ligações em toda parte (1).zip" type="application/zip">Livro compactado em .zip</a></li>
+    </ul>
+</body>
+</html>

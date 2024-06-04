@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras citações</title>
+</head>
+<body>
+    <h1>Código-fonte / Pré-formatação</h1>
+
+    <p>Abaixo você verá um codigo em JavaScript colocado utilizando a tag &ltcode&gt para determinar que é um código, perceba que <br> a fonte ira mudar quando chegar em documents</p>
+    <p>O comando <code>documents.getElementsById(1test')</code> é escrito em linguagem JavaScript</p>
+    <p>Agora abaixo você vera linhas de código em python utilizando este mesmo metodo de tag</p>
+    <code>
+        num = int (input(' Digite um número'))
+            if num % 2 == 0:
+            print(f'O numero {num} é PAR)
+            else:
+            print(f'O numero {num} é IMPAR)
+            print('Fim do programa')
+    </code>
+    <p>Muito feio ele inteiro, certo? Para isso colocamos a tag &ltpre&gt antes da tag &ltcode&gt e ele ira seguir o padrão<br>que construimos o código, abaixo você vera seguindo esses passos.</p>
+<pre>
+    <code>
+        num = int (input(' Digite um número'))
+        if num % 2 == 0:
+        print(f'O numero {num} é PAR)
+        else:
+        print(f'O numero {num} é IMPAR)
+        print('Fim do programa')
+    
+    </code>
+</pre>
+<p>Nesta forma de cima o codigo esta com espaçamentos gigantes, para retirar isso selecionamos o código sem as <br> TAGS &ltpre&gt e &ltcode&gt e apertamos Shift + Tab. Exemplo abaixo.</p>
+
+<pre>
+    <code>
+num = int (input(' Digite um número'))
+if num % 2 == 0:
+print(f'O numero {num} é PAR)
+else:
+print(f'O numero {num} é IMPAR)
+print('Fim do programa')
+    
+    </code></pre>
+    <p>Pronto, agora ele está de forma mais facil para o entedimento de quem estiver lendo, com espaçamentos e dividido em linhas da forma correta!</p>
+    <h2>Citações</h2>
+    <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido.</q> Aqui utilizamos a tag &ltq&gt para criar aspas e fazer citações.</p>
+    <h2>Citações completas</h2>
+    <p>Segundo Jeff Noble, no seu HTML para leigos:</p><blockquote cite="https://www.google.com.br/books/edition/Guia_de_Orientação_e_Desenvolvimento_d/1YuwDwAAQBAJ?hl=pt-BR&gbpv=1">
+        A diferença entre elementos inline e um bloco de exto é importante. Os elementos em HTML neste capitulo indica os blocos de texto. lor
+    </blockquote>
+    <p>Aqui acima nós criamos uma citação em bloco que pode ser colocado um link para preservar os direitos autorais <br>e ter um espaçamento maior, o link não aparece para o usuario, apenas para o google!</p>
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando! Aqui adicionamos o significado das siglas ao passar o mouse por cima delas com a tag &ltabbr&gt</p>
+    <h2>Texto invertido</h2>
+    <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML</bdo></p>
+     <p>Aqui invertemos o texto utilizando a tag &ltbdo&gt que quando criada pede uma direção em DIR colocamos RTL para o texto ficar da direita para a esquerda e LTR para ficar da esquerda para a direita (modo padrão de leitura)</p>
+
+</body>
+</html>

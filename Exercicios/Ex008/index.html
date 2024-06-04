@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de textos</title>
+    <style>
+        mark {
+            background-color: rgb(53, 53, 99);
+        }
+    </style> <!--Aqui estamos colocando em CSS as marcações <mark> em uma cor desejada, e as marcações que estavam em outras cores são desativadas, então é necessario tirar o style="background-color: aqua;" da linha 23 e deixar apenas o <mark> -->
+</head>
+
+<body>
+    <h1>Principais formatações</h1>
+    <h2>Nergito ou destaque</h2>
+    <p>Nessa frase <b>temos um termo em negrito</b> usando a tag &ltb&gt (Não semantica)</p>
+    <p>Nessa frase <strong>temos um termo em destaque</strong> utilizando a tag &ltStrong&gt (semantica)</p> <!--Estas duas formas deixam o texto em negrito-->
+    <h2>Italico ou Ênfase</h2>
+    <p>Nesta frase <i>temos um termo em italico</i>, usando a tag &lti&gt ou segurando Ctrl + Shift + P e Selecionando envelope de abreviação. (Não semantica)</p>
+    <p>Nesta frase <em>temos uma ênfase em italico</em> usando a tag &ltem&gt (Não semantica)</p><!--Estas duas formas deixam o texto em italico-->
+    <h2>Texto marcado</h2>
+    <p>Podemos tambem criar um <mark style="background-color: aqua;"></mark>texto marcado</mark> usando a tag &ltMark&gt </p> <!--Aqui colocamos o style para mudar a marcação neste mark em especifico-->
+    <p><mark>Podemos tambem</mark> mudar <mark>a cor de varias</mark> marcações <mark>ao mesmo tempo utilizando</mark> o CSS</p> 
+    <h2>Texto grande e pequeno</h2>
+    <p>Estamos criando um texto <big>grande</big> com a tag &ltbig&gt e <small>pequeno</small> com a tag &ltsmall&gt neste paragrafo</p> <!--Aqui podemos ver que BIG está obsoleto, que seria a tag para deixar o texto grande, ja small não está, que é a tag que deixa o texto pequeno, caso queira um grande é melhor formatar em CSS-->
+    <h2>Texto excluido</h2>
+    <p>Podemos marcar um texto como <del>excluido</del> para indicar que ele deve ser lido mas não considerado com a tag &ltdel&gt</p>
+    <h2>Texto inserido</h2>
+    <p>Podemos marcar um texto como <ins>inserido</ins> para dar uma ênfase e indicar que ele foi adicionado depois com a tag &ltins&gt</p>
+    <p>Existe tambem o <u>sublinhado</u> com a tag &ltu&gt (Não semantica)</p>
+    <h2>Texto sobescrito</h2>
+    <p>Para inserir coisas do tipo X<sup>20</sup>+3 com a tag &ltsup&gt</p>
+    <h2>Texto subscrito</h2>
+    <p>Para inserir coisas do tipo H<sub>2</sub>O com a tag &ltsub&gt</p>
+   
+
+    
+</body>
+</html>

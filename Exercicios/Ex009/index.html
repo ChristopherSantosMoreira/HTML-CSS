@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+<h1>Trabalhando com listas</h1>
+<h2>Listas ordenadas</h2>
+    <ol type="1" start="4"> <!--Type muda o estilo da lista que é: 1: Ordem numerica, A: Ordem alfabetica, I: Ordem numérica em numeros romanos, as outras como a e i são as mesmas anteriores mas com letras minusculas. Start diz quando ira iniciar, no caso ele esta iniciando do 4 ja que o comando esta Start="4" que é basicamente começar em "4"-->
+    <li>Acordar
+    <li>Tomar Café da manhã <!--Repare que em momento nenhum foi necessario fechar a tag li com </li> isso se deve porque tanto faz você fechar a tag ou não, pois funciona do mesmo jeito.-->
+    <li>Escovar os dentes
+    <li>Se arrumar
+    <li>Ir pro trabalho</li>
+    <li>Voltar para casa</li>
+    <li>Dormir</li>
+        </li> 
+
+    </ol>
+    <h2>Listas não ordenadas</h2>
+    <ul type="Disk"> <!--Em type desta vez, podemos colocar as seguintes formatações: disc para formato de um disco, circle para formato de um disco mas vazio por dentro e square para formato de um quadrado. -->
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Limão</li>
+        <li>Arroz</li>
+        <li>Feijão</li>
+    </ul>
+    <h2>Minhas linguagens favoritas</h2>
+    <ol>
+        <li>Antigas</li>
+        <ol type="a"><!--Aqui temos uma lista dentro de uma lista, esses formatos de coisas dentro de outras coisas sao comumente chamadas de ANINHAMENTO de NINHO-->
+        <li>Clipper</li>
+        <li>Visual Basic</li>
+        <li>Fortran</li>
+        <li>Delphi</li>
+        </ol>
+        <li>Novas</li>
+        <ol type="a" start="5"> <!--Neste campo utilizamos start="5" por conta que o start só le numeração e nunca caractere, então trabalhamos com a parte de elementos, no caso esta setado o tipo em "a" então seguira a ordem alfabetica minuscula, em seguida startamos a partir do 5 elemento do alfabeto start="5" então ele inicia do 5 elemento do alfabeto, no caso a letra "e".-->
+        <li>Php</li>
+        <li>Python
+        <li>JavaScript</li>
+        <li>Kotlin</li>
+        </li>
+        </ol>
+
+    </ol>
+
+    <H2>Meus jogos favoritos</H2>
+    <ol>
+        <li>PC</li>
+        <ul type="disc">
+            <li>GTA
+                <ul type="square">
+                    <li>GTA SAN ANDREAS</li>
+                    <li>GTA 5</li>
+                    <li>GTA 6</li>
+                </ul>
+                <li>Minecraft
+                    <li>Habblet</li>
+                </li>
+            </li>
+        </ul>
+        <li>PS3</li>
+        <ul type="square">
+            <li>DuckDuckSpace</li>
+            <li>DuckDuckSpace2</li>
+            <li>DuckDuckSpace3</li>
+        </ul>
+    </ol>
+    <h2>Lista de Definição</h2>
+    <dl>
+        <dt>Termo</dt>
+        <dd>Descrição</dd>
+
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para criação de conteudos em um site.</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para criação de Design de um site.</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para a criação de interatividade de um site.</dd>
+
+
+
+
+
+
+
+
+
+
+
+
+    </dl>
+
+
+
+
+    
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midia em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinamicas</h1>
+    <p>Tente abrir este site em vrios dispositivos diferentes ou simplesmente aumente ou diminua o tamanho do seu navegador </p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="Imagens/Foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="Imagens/Foto-m.png" type="image/png">
+      <img src="Imagens/Foto-g.png" alt="Imagem flexivel">
+    </picture>
+    <h1>Reprodução de audio</h1>
+    <p>Vamos aparender a reproduzir audios em HTML5</p>
+    <!-- "<audio src="midia/bossa sonsa quincas moreira.mp3" controls >< /audio>" <---- Aqui colocamos para tocar um audio no nosso site, porem de forma limitada, tendo que clicar para começar a tocar a música-->
+    <audio preload="metadata" autoplay controls loop> <!--Aqui colocamos o preload="metadata" para ele ler apenas o basico do audio, como tamanho, duração, data e etc. Temos as opções de auto e none, em auto ele ira ler todo arquivo e só podera tocar depois que o arquivo inteiro estiver sido baixado e lido, oque trapalha em navegações como a do celular dependendo do tamanho do arquivo, ja em none ele não ira ler absolutamente nada, esperando que você clique para começar alguma ação. O comando Controls nos permite criar um controle de audio, como j=um botao ilustrativo e interativo de play como o do youtube, tendo tempo de duração, botaod e pausa e play, controle do volume e controle do tempo do audio. E por fim temos o loop, que basicamente põe o audio em loop.-->
+        <source src="midia/bossa sonsa quincas moreira.mp3" type="audio/mpeg"> <!--Aqui colocamos o formato em mpeg para reproduzir em .mp3 mas caso queira em outros tipos de arquivos existem o .ogg e .wav porem o .wav costuma ser grande demais e não é recomendado, claro os arquivos precisam estar nesses formatos para funcionar, aqui é apenas um exemplo.-->
+        <source src="midia/bossa sonsa quincas moreira.ogg" type="audio/ogg"><!--Sempre em ordem, o codigo vai ler primeiro o .mp3, caso não consiga reproduzir ele ira tentar o .ogg e por ultimo se não conseguir reproduzir ele ira tentar o .wav-->
+        <source src="midia/bossa sonsa quincas moreira.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir áudios porem<a href="midia/bossa sonsa quincas moreira.mp3"></a>você pode baixar o arquivo .mp3 aqui</p>
+    </audio>
+    
+</body>
+</html>
